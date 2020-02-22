@@ -1,4 +1,4 @@
-# design-system
+# Vue starter kit for atomic design system with storybook
 
 ## Project setup
 ```
