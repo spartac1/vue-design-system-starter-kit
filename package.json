@@ -1,18 +1,29 @@
 {
-  "name": "design-system",
+  "name": "Vue-Atomic-Design-System-Starter-Kit",
+  "description": "Vue starter kit for atomic design system with storybook",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/design-system.ssr.js",
+  "module": "dist/design-system.esm.js",
+  "browser": "dist/design-system.js",
+  "unpkg": "dist/design-system.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serve": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c --environment BUILD:production"
   },
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/vue": "^5.3.13",
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-plugin-unit-jest": "^4.2.0",
@@ -20,11 +31,16 @@
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/test-utils": "1.0.0-beta.31",
     "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-vue": "^6.1.2",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "rollup": "^1.31.1",
+    "rollup-plugin-css-only": "^2.0.0",
+    "rollup-plugin-vue": "^5.1.6"
   }
 }
