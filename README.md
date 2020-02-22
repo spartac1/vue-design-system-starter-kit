@@ -5,12 +5,12 @@
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads storybbok server
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies library 
 ```
 yarn build
 ```
@@ -24,6 +24,3 @@ yarn test:unit
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
